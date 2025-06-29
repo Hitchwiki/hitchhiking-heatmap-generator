@@ -1,6 +1,3 @@
-
-requires 8 GB RAM
-
 Calculates heatmap of world-wide hitchhiking waiting times using data from https://hitchmap.com/.
 
 The calculated map is stored at
