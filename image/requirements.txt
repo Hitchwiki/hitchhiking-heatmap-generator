@@ -1,0 +1,4 @@
+datasets>=3.2.0
+heatchmap>=0.2.9
+huggingface-hub>=0.27.1
+memory-profiler==0.61.0

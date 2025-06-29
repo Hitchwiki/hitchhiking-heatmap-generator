@@ -16,6 +16,6 @@ WORKDIR /app
 COPY requirements.txt ./
 COPY run.py ./
 
-RUN pip3 install -r requirements.txt
+RUN pip install -r requirements.txt
 
-ENTRYPOINT ["python3", "run.py"]
+ENTRYPOINT ["python3", "-m", "memory_profiler", "run.py"]

@@ -11,18 +11,17 @@ The map can be seen e.g. at https://hitchhiking.org/
 
 Currently this archiver is deployed by @tillwenke on Azure like this:
 
-Get an Azure account with a Subscription and create the resource group `hitchhiking-data`. Then run the following from terminal:
+Get an Azure account with a Subscription. Then run the following from terminal:
 
-az login       
+```
+chomd 777 azure.sh
+./azure_setup.sh
+```
 
-az acr create --name crhitchhiking --resource-group hitchhiking-data --sku Basic
+Copy `example.env` to `.env` and set the variables:
+- HF_TOKEN with write permissions in huggingface
 
-az acr login --name crhitchhiking  
-
-docker build -t crhitchhiking.azurecr.io/dumpstermap-huggingface-uploader:v4 .
-
-docker push dumpstermap.azurecr.io/dumpstermap-huggingface-uploader:v4
-
-create an Azure Container App Jobs
-
-- set env var HF_TOKEN with write permissions
+```
+chomd 777 azure.sh
+./azure_deploy.sh
+```
