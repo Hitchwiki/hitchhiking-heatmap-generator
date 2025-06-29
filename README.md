@@ -1,11 +1,8 @@
-
-requires 8 GB RAM
-
 Calculates heatmap of world-wide hitchhiking waiting times using data from https://hitchmap.com/.
 
-The calculated map is stored at
+The calculated map is stored at https://huggingface.co/datasets/Hitchwiki/hitchhiking-heatmap.
 
-The map can be seen e.g. at https://hitchhiking.org/
+The map can be seen e.g. at https://hitchhiking.org/ or https://hitchwiki.org/en/File:Hitchhiking_world.jpg.
 
 # Deployment
 
